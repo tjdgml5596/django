@@ -1,0 +1,14 @@
+<head>
+    <title>PROFILE LIST</title>
+
+</head>
+<body>
+    <h1>LIST</h1>
+    {% for profile in profiles.all %}
+        <div class="container">
+            <h2><a href="profile/{{profile.id}}/">{{profile.name}}</a></h2>
+
+        </div>
+    {% endfor%}
+</body>
+</html>
